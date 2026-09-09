@@ -34,35 +34,35 @@ Backlog incremental. Cada fase constrói sobre a anterior. Marcar `[X]` ao concl
 - [X] Conferir saída manualmente com o exemplo `voo.txt` do enunciado
 
 ## 🎯 Fase 5 — Algoritmo Earliest-Deadline-First (edf)
-- [ ] Prioridade dinâmica: menor deadline absoluto → maior prioridade (recalculada a cada tick)
-- [ ] Preempção: nova tarefa com deadline mais próximo interrompe a atual imediatamente
-- [ ] Desempate: mesma regra (ordem no arquivo de entrada)
-- [ ] Gerar saída `edf_<login>.out` com o mesmo formato de seções
-- [ ] Conferir saída manualmente com o exemplo `voo.txt`
+- [X] Prioridade dinâmica: menor deadline absoluto → maior prioridade (recalculada a cada tick)
+- [X] Preempção: nova tarefa com deadline mais próximo interrompe a atual imediatamente
+- [X] Desempate: mesma regra (ordem no arquivo de entrada)
+- [X] Gerar saída `edf_<login>.out` com o mesmo formato de seções
+- [X] Conferir saída manualmente com o exemplo `voo.txt`
 
 ## 📄 Fase 6 — Formato de saída e contadores
-- [ ] Garantir que blocos contíguos de execução da mesma tarefa são agrupados (não um tick por linha)
-- [ ] Sufixos corretos por linha de execução: `F` (finished), `H` (hit deadline, i.e., preempted/interrupted mas terminou a tempo), `L` (lost deadline)
-- [ ] Contador `LOST DEADLINES` por tarefa (perdas dentro do tempo de simulação)
-- [ ] Contador `COMPLETE EXECUTION` por tarefa (instâncias que terminaram a tempo)
-- [ ] Contador `KILLED` por tarefa (instâncias ativas quando a simulação encerra)
-- [ ] Nada impresso em stdout durante execução normal
+- [X] Garantir que blocos contíguos de execução da mesma tarefa são agrupados (não um tick por linha)
+- [X] Sufixos corretos por linha de execução: `F` (finished), `H` (hit deadline, i.e., preempted/interrupted mas terminou a tempo), `L` (lost deadline)
+- [X] Contador `LOST DEADLINES` por tarefa (perdas dentro do tempo de simulação)
+- [X] Contador `COMPLETE EXECUTION` por tarefa (instâncias que terminaram a tempo)
+- [X] Contador `KILLED` por tarefa (instâncias ativas quando a simulação encerra)
+- [X] Nada impresso em stdout durante execução normal
 
 ## 🛡️ Fase 7 — Robustez e tratamento de erros
-- [ ] Erro: número incorreto de argumentos
-- [ ] Erro: primeiro argumento diferente de `rate` ou `edf`
-- [ ] Erro: arquivo inexistente ou ilegível
-- [ ] Erro: arquivo malformado (campo faltando, valor não numérico, valor não positivo)
-- [ ] Erro: tarefa com `D > P` ou `C > D`
-- [ ] Em qualquer erro: stderr + exit ≠ 0 + nenhum arquivo `.out` criado
-- [ ] Testar casos extremos: 1 tarefa, TEMPO_TOTAL muito curto, tarefa nunca termina
+- [X] Erro: número incorreto de argumentos
+- [X] Erro: primeiro argumento diferente de `rate` ou `edf`
+- [X] Erro: arquivo inexistente ou ilegível
+- [X] Erro: arquivo malformado (campo faltando, valor não numérico, valor não positivo)
+- [X] Erro: tarefa com `D > P` ou `C > D`
+- [X] Em qualquer erro: stderr + exit ≠ 0 + nenhum arquivo `.out` criado
+- [X] Testar casos extremos: 1 tarefa, TEMPO_TOTAL muito curto, tarefa nunca termina
 
 ## 🔬 Fase 8 — Testes e análise comparativa
-- [ ] Reproduzir exatamente o exemplo do enunciado (`voo.txt`) para `rate` e conferir linha a linha
-- [ ] Criar caso de teste onde `rate` perde deadlines e `edf` não (obrigatório para o relatório)
-- [ ] Testar com múltiplas tarefas, períodos variados, deadline justo
-- [ ] Testar todos os casos de erro listados na Fase 7
-- [ ] Registrar evidências (saídas, diffs) para o relatório
+- [X] Reproduzir exatamente o exemplo do enunciado (`voo.txt`) para `rate` e conferir linha a linha
+- [X] Criar caso de teste onde `rate` perde deadlines e `edf` não (obrigatório para o relatório)
+- [X] Testar com múltiplas tarefas, períodos variados, deadline justo
+- [X] Testar todos os casos de erro listados na Fase 7
+- [X] Registrar evidências (saídas, diffs) para o relatório
 
 ## 📝 Fase 9 — README e Makefile
 - [ ] Makefile: `make` sem alvo gera executável `scheduler`; `make clean` remove compilados

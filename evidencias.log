@@ -152,4 +152,121 @@ ls: cannot access 'edf_blgv.out': No such file or directory
 cat rate_blgv.out
 
 echo
-
+echo "=== TEMPO_TOTAL curto (menor que 1 burst inteiro) ==="
+rm -f rate_blgv.out
+./scheduler rate /tmp/tempocurto.txt; echo "exit: $?"cat rate_blgv.out
+[?2004l=== 1 tarefa ===
+exit: 0
+EXECUTION BY RATE
+[ATT] for 8 units - F
+idle for 12 units
+[ATT] for 8 units - F
+idle for 12 units
+[ATT] for 8 units - F
+idle for 2 units
+
+LOST DEADLINES
+[ATT] 0
+
+COMPLETE EXECUTION
+[ATT] 3
+
+KILLED
+[ATT] 0
+
+=== TEMPO_TOTAL curto (menor que 1 burst inteiro) ===
+exit: 0
+EXECUTION BY RATE
+[ATT] for 3 units
+
+LOST DEADLINES
+[ATT] 0
+
+COMPLETE EXECUTION
+[ATT] 0
+
+KILLED
+[ATT] 1
+[?2004h]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [7mecho "=== Tarefa com C=D=P (roda contínuo, sem folga) ==="[27m
+[7mrm -f rate_blgv.out[27m
+[7m./scheduler rate /tmp/nuncatermin.txt; echo "exit: $?"[27m
+[7mcat rate_blgv.out[27m
+[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "=== Tarefa com C=D=P (roda contínuo, sem folga) ==="
+rm -f rate_blgv.out
+./scheduler rate /tmp/nuncatermin.txt; echo "exit: $?"
+cat rate_blgv.out
+[A
+[?2004l=== Tarefa com C=D=P (roda contínuo, sem folga) ===
+exit: 0
+EXECUTION BY RATE
+[ATT] for 5 units - F
+[ATT] for 5 units - F
+[ATT] for 5 units - F
+[ATT] for 5 units - F
+
+LOST DEADLINES
+[ATT] 0
+
+COMPLETE EXECUTION
+[ATT] 4
+
+KILLED
+[ATT] 0
+[?2004h]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ cat > /tmp/stress.txt << 'EOF'
+30
+A 10 10 4
+B 10 10 4C 30 20 10EOFcd /home/loyola/Documents/Aviaorm -f rate_blgv.out edf_blgv.out./scheduler rate /tmp/stress.txtecho "=== RATE ==="cat rate_blgv.outecho./scheduler edf /tmp/stress.txt[7mecho "=== EDF ==="[27m[7mcat edf_blgv.out[27mecho "=== EDF ==="cat edf_blgv.out
+[?2004l=== RATE ===
+EXECUTION BY RATE
+[A] for 4 units - F
+[B] for 4 units - F
+[C] for 2 units - H
+[A] for 4 units - F
+[B] for 4 units - F
+[C] for 2 units - L
+[A] for 4 units - F
+[B] for 4 units - F
+idle for 2 units
+
+LOST DEADLINES
+[A] 0
+[B] 0
+[C] 1
+
+COMPLETE EXECUTION
+[A] 3
+[B] 3
+[C] 0
+
+KILLED
+[A] 0
+[B] 0
+[C] 0
+
+=== EDF ===
+EXECUTION BY EDF
+[A] for 4 units - F
+[B] for 4 units - F
+[C] for 2 units - H
+[A] for 4 units - F
+[B] for 4 units - F
+[C] for 2 units - L
+[A] for 4 units - F
+[B] for 4 units - F
+idle for 2 units
+
+LOST DEADLINES
+[A] 0
+[B] 0
+[C] 1
+
+COMPLETE EXECUTION
+[A] 3
+[B] 3
+[C] 0
+
+KILLED
+[A] 0
+[B] 0
+[C] 0
+[?2004h]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao
