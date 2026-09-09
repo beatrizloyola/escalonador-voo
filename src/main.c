@@ -80,6 +80,59 @@ int main(int argc, char *argv[]){
         qtdTarefas = qtdTarefas + 1;
     }
 
+    Instancia *instancias[qtdTarefas];
+    for (int i = 0; i < qtdTarefas; i++){
+        instancias[i] = NULL;
+    }
+
+    int idle = 0;
+
+    for(int t = 0; t < TEMPO_TOTAL; t++){
+        // Checar deadline perdido
+        for (int i = 0; i < qtdTarefas; i++){
+            if (instancias[i] != NULL && t >= instancias[i]->deadlineAbsoluta && instancias[i]->burstRestante > 0){
+                tarefas[i]->deadlinesPerdidos++;
+                free(instancias[i]);
+                instancias[i] = NULL;
+            }
+        }
+
+        // Checar chegadas
+        for (int i = 0; i < qtdTarefas; i++){
+            if (t % tarefas[i]->periodo == 0){
+                instancias[i] = criarInstancia(tarefas[i], t);
+            }
+        }
+
+        // Escolher quem roda
+        Instancia *escolhida = escolherProxima(instancias, qtdTarefas, argv[1]);
+
+        // Executar 1 tick
+            if (escolhida == NULL){
+                idle++;
+            } else {
+                escolhida->burstRestante--;
+                if (escolhida->burstRestante == 0){
+                    for (int i = 0; i<qtdTarefas; i++){
+                        if (instancias[i] == escolhida){
+                            tarefas[i]->completos++;
+                            instancias[i] = NULL;
+                            free(escolhida);
+                            break;
+                        }
+                    }
+                }
+            }            
+    }
+
+    // Checar killed
+    for (int i = 0; i < qtdTarefas; i++){
+        if (instancias[i] != NULL && instancias[i]->burstRestante > 0){
+            free(instancias[i]);
+            tarefas[i]->killed++;
+            instancias[i] = NULL;
+        }
+    }
 
     fclose(arquivo);
     return 0;

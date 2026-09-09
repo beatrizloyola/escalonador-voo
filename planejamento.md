@@ -18,12 +18,12 @@ Backlog incremental. Cada fase constrói sobre a anterior. Marcar `[X]` ao concl
 - [X] Armazenar tarefas em estrutura interna (preservando ordem de chegada no arquivo)
 
 ## 🧮 Fase 3 — Núcleo da simulação (loop de tempo)
-- [ ] Implementar o loop de simulação tick a tick (t = 0 até TEMPO_TOTAL − 1)
-- [ ] Gerenciar instâncias: a cada tick, verificar quais tarefas têm nova instância chegando (`t % P == 0`)
-- [ ] Gerenciar deadline absoluto de cada instância (`chegada + D`)
-- [ ] Implementar detecção de perda de deadline: instância não terminou até seu deadline absoluto → descartar rajada restante, registrar lost deadline, aguardar próxima instância
-- [ ] Implementar idle: nenhuma tarefa pronta → registrar idle
-- [ ] Estrutura de dados para fila de prontos (suporte a preempção)
+- [X] Implementar o loop de simulação tick a tick (t = 0 até TEMPO_TOTAL − 1)
+- [X] Gerenciar instâncias: a cada tick, verificar quais tarefas têm nova instância chegando (`t % P == 0`)
+- [X] Gerenciar deadline absoluto de cada instância (`chegada + D`)
+- [X] Implementar detecção de perda de deadline: instância não terminou até seu deadline absoluto → descartar rajada restante, registrar lost deadline, aguardar próxima instância
+- [X] Implementar idle: nenhuma tarefa pronta → registrar idle
+- [X] Estrutura de dados para fila de prontos (suporte a preempção)
 
 ## ✈️ Fase 4 — Algoritmo Rate-Monotonic (rate)
 - [ ] Prioridade fixa: menor período → maior prioridade

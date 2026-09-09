@@ -6,8 +6,22 @@ typedef struct Tarefa{
     int periodo;
     int deadline;
     int burst;
+
+    int deadlinesPerdidos;
+    int completos;
+    int killed;
 } Tarefa;
 
+typedef struct Instancia{
+    Tarefa *tarefa;
+    int chegada; // t em que nasceu
+    int deadlineAbsoluta; // chegada + deadline
+    int burstRestante;
+    int foiPreemptada;
+} Instancia;
+
 Tarefa *criarTarefa(char *nome, int periodo, int deadline, int burst);
+Instancia *criarInstancia(Tarefa *tarefa, int chegada);
+Instancia *escolherProxima(Instancia **instancias, int qtdTarefas, char *modo);
 
 #endif
