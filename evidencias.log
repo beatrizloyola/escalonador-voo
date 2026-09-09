@@ -65,4 +65,91 @@ make: *** [Makefile:9: scheduler] Error 1
 [01m[Ksrc/escalonador.c:30:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KqtdTarefas[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
    30 | Instancia *modoEdf(Instancia **instancias, [01;35m[Kint qtdTarefas[m[K){
       |                                            [01;35m[K~~~~^~~~~~~~~~[m[K
-[?2004h]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-
+[?2004h]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -o scheduler src/escalonador.c src/main.c src/tarefa.c
+[?2004h]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ echo "=== 1. Numero incorreto de argumentos ==="
+/home/loyola/Documents/Aviao/scheduler rate; echo "exit: $?"
+echo
+/home/loyola/Documents/Aviao/scheduler; echo "exit: $?"echoecho "=== 2. Modo invalido ==="/home/loyola/Documents/Aviao/scheduler foo voo.txt; echo "exit: $?"[7mecho[27m[7mecho "=== 3. Arquivo inexistente ==="[27m[7m/home/loyola/Documents/Aviao/scheduler rate naoexiste.txt; echo "exit: $?"[27mechoecho "=== 3. Arquivo inexistente ==="/home/loyola/Documents/Aviao/scheduler rate naoexiste.txt; echo "exit: $?"
+[?2004l=== 1. Numero incorreto de argumentos ===
+Erro: Quantidade de argumentos inválida
+exit: 1
+
+Erro: Quantidade de argumentos inválida
+exit: 1
+
+=== 2. Modo invalido ===
+Modos aceitos: rate e edf
+exit: 1
+
+=== 3. Arquivo inexistente ===
+Erro: falha ao ler entrada de entrada
+exit: 1
+[?2004h]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ ^?[K
+echo "100
+ATT abc 12 8" > /tmp/malformado1.txt
+
+echo "100
+ATT 20 8" > /tmp/malformado2.txt
+
+echo "100
+ATT 20 12 8 8" > /tmp/malformado3.txt
+
+echo "100
+ATT 10 15 8" > /tmp/dgtp.txt
+
+echo "100
+ATT 20 10 15" > /tmp/cgtd.txt
+
+echo "0ATT 20 12 8" > /tmp/tempozero.txtrm -f rate_blgv.out edf_blgv.outecho "=== 4a. Campo faltando ==="./scheduler rate /tmp/malformado2.txt; echo "exit: $?"echo "=== 4b. Valor nao numerico ==="./scheduler rate /tmp/malformado1.txt; echo "exit: $?"[7mecho "=== 4c. Campo extra (deve dar erro ou ignorar?) ==="[27m[7m./scheduler rate /tmp/malformado3.txt; echo "exit: $?"[27m[7mecho "=== 5. D > P ==="[27m[7m./scheduler rate /tmp/dgtp.txt; echo "exit: $?"[27m[7mecho "=== 6. C > D ==="[27m[7m./scheduler rate /tmp/cgtd.txt; echo "exit: $?"[27m[7mecho "=== 7. TEMPO_TOTAL zero ==="[27m[7m./scheduler rate /tmp/tempozero.txt; echo "exit: $?"[27m[7mecho "=== Verificando se .out foi criado indevidamente ==="[27m[7mls rate_blgv.out edf_blgv.out 2>&1[27mecho "=== 4c. Campo extra (deve dar erro ou ignorar?) ==="./scheduler rate /tmp/malformado3.txt; echo "exit: $?"echo "=== 5. D > P ==="./scheduler rate /tmp/dgtp.txt; echo "exit: $?"echo "=== 6. C > D ==="./scheduler rate /tmp/cgtd.txt; echo "exit: $?"echo "=== 7. TEMPO_TOTAL zero ==="./scheduler rate /tmp/tempozero.txt; echo "exit: $?"echo "=== Verificando se .out foi criado indevidamente ==="ls rate_blgv.out edf_blgv.out 2>&1
+[?2004l=== 4a. Campo faltando ===
+Erro: linha mal formada
+exit: 1
+=== 4b. Valor nao numerico ===
+Erro: linha mal formada
+exit: 1
+=== 4c. Campo extra (deve dar erro ou ignorar?) ===
+Erro: linha mal formada
+exit: 1
+=== 5. D > P ===
+Erro: é esperado que burst <= deadline <= periodo
+exit: 1
+=== 6. C > D ===
+Erro: é esperado que burst <= deadline <= periodo
+exit: 1
+=== 7. TEMPO_TOTAL zero ===
+Erro: tempo total não é inteiro positivo
+exit: 1
+=== Verificando se .out foi criado indevidamente ===
+ls: cannot access 'rate_blgv.out': No such file or directory
+ls: cannot access 'edf_blgv.out': No such file or directory
+[?2004h]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ [K]0;loyola@loyola-dell-g15: ~/Documents/Aviao[01;32mloyola@loyola-dell-g15[00m:[01;34m~/Documents/Aviao[00m$ ^?[Kecho "50
+ATT 20 12 8" > /tmp/umatarefa.txt
+
+[7mecho "3[27m
+[7mATT 20 12 8" > /tmp/tempocurto.txt[27m
+
+[7mecho "20[27m
+[7mATT 5 5 5" > /tmp/nuncatermin.txt[27m
+
+[7mecho "=== 1 tarefa ==="[27m
+[7mrm -f rate_blgv.out[27m
+[7m./scheduler rate /tmp/umatarefa.txt; echo "exit: $?"[27m
+[7mcat rate_blgv.out[27m
+
+[7mecho[27m
+[7mecho "=== TEMPO_TOTAL curto (menor que 1 burst inteiro) ==="[27m
+[7mrm -f rate_blgv.out[27m
+[7m./scheduler rate /tmp/tempocurto.txt; echo "exit: $?"[27m[7mcat rate_blgv.out[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[Aecho "3
+ATT 20 12 8" > /tmp/tempocurto.txt
+
+echo "20
+ATT 5 5 5" > /tmp/nuncatermin.txt
+
+echo "=== 1 tarefa ==="
+rm -f rate_blgv.out
+./scheduler rate /tmp/umatarefa.txt; echo "exit: $?"
+cat rate_blgv.out
+
+echo
+

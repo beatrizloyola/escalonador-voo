@@ -51,14 +51,6 @@ int main(int argc, char *argv[]){
     int maxTarefas = 100;
     Tarefa *tarefas[maxTarefas];
 
-    char nomeentrada[32];
-    sprintf(nomeentrada, "%s_blgv.out", argv[1]); // "rate_blgv.out" ou "edf_blgv.out"
-    FILE *saida = fopen(nomeentrada, "w");
-    if (saida == NULL){
-        fprintf(stderr, "Erro: falha ao criar entrada de saída\n");
-        exit(1);
-    }
-
     while (1){
         if (qtdTarefas >= maxTarefas){
             fprintf(stderr, "Erro: número de tarefas excede o limite suportado\n");
@@ -112,6 +104,14 @@ int main(int argc, char *argv[]){
     Tarefa *blocoTarefa = NULL;
     int blocoDuracao = 0;
     int blocoAberto = 0;
+
+    char nomeSaida[32];
+    sprintf(nomeSaida, "%s_blgv.out", argv[1]); // "rate_blgv.out" ou "edf_blgv.out"
+    FILE *saida = fopen(nomeSaida, "w");
+    if (saida == NULL){
+        fprintf(stderr, "Erro: falha ao criar entrada de saída\n");
+        exit(1);
+    }
 
     fprintf(saida, "EXECUTION BY %s\n", strcmp(argv[1],"rate")==0 ? "RATE" : "EDF");
 
