@@ -29,9 +29,9 @@ Backlog incremental. Cada fase constrói sobre a anterior. Marcar `[X]` ao concl
 - [X] Prioridade fixa: menor período → maior prioridade
 - [X] Preempção: nova tarefa de maior prioridade interrompe a atual imediatamente
 - [X] Desempate: tarefa que aparece primeiro no arquivo de entrada vence
-- [ ] Gerar saída `rate_<login>.out` com o formato correto (blocos de execução contíguos)
-- [ ] Seções do arquivo de saída: `EXECUTION BY RATE`, `LOST DEADLINES`, `COMPLETE EXECUTION`, `KILLED`
-- [ ] Conferir saída manualmente com o exemplo `voo.txt` do enunciado
+- [X] Gerar saída `rate_<login>.out` com o formato correto (blocos de execução contíguos)
+- [X] Seções do arquivo de saída: `EXECUTION BY RATE`, `LOST DEADLINES`, `COMPLETE EXECUTION`, `KILLED`
+- [X] Conferir saída manualmente com o exemplo `voo.txt` do enunciado
 
 ## 🎯 Fase 5 — Algoritmo Earliest-Deadline-First (edf)
 - [ ] Prioridade dinâmica: menor deadline absoluto → maior prioridade (recalculada a cada tick)
