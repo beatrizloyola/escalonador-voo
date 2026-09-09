@@ -22,6 +22,5 @@ typedef struct Instancia{
 
 Tarefa *criarTarefa(char *nome, int periodo, int deadline, int burst);
 Instancia *criarInstancia(Tarefa *tarefa, int chegada);
-Instancia *escolherProxima(Instancia **instancias, int qtdTarefas, char *modo);
 
 #endif

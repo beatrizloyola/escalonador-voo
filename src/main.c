@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "tarefa.h"
+#include "escalonador.h"
 
 int main(int argc, char *argv[]){
     if (argc != 3){
@@ -86,6 +87,7 @@ int main(int argc, char *argv[]){
     }
 
     int idle = 0;
+    Instancia *ultimaEscolhida = NULL;
 
     for(int t = 0; t < TEMPO_TOTAL; t++){
         // Checar deadline perdido
@@ -106,23 +108,35 @@ int main(int argc, char *argv[]){
 
         // Escolher quem roda
         Instancia *escolhida = escolherProxima(instancias, qtdTarefas, argv[1]);
+        if (ultimaEscolhida != NULL && ultimaEscolhida != escolhida){
+            // Trocou quem roda, preemptação
+            ultimaEscolhida->foiPreemptada = 1;
+        }
 
         // Executar 1 tick
-            if (escolhida == NULL){
-                idle++;
-            } else {
-                escolhida->burstRestante--;
-                if (escolhida->burstRestante == 0){
-                    for (int i = 0; i<qtdTarefas; i++){
-                        if (instancias[i] == escolhida){
-                            tarefas[i]->completos++;
-                            instancias[i] = NULL;
-                            free(escolhida);
-                            break;
-                        }
+        int terminou = 0;
+        if (escolhida == NULL){
+            idle++;
+        } else {
+            escolhida->burstRestante--;
+            if (escolhida->burstRestante == 0){
+                terminou = 1;
+                for (int i = 0; i<qtdTarefas; i++){
+                    if (instancias[i] == escolhida){
+                        tarefas[i]->completos++;
+                        instancias[i] = NULL;
+                        free(escolhida);
+                        break;
                     }
                 }
-            }            
+            }
+        }
+
+        if (escolhida == NULL || terminou){
+            ultimaEscolhida = NULL;
+        } else {
+            ultimaEscolhida = escolhida;
+        }
     }
 
     // Checar killed

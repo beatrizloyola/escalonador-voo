@@ -26,9 +26,9 @@ Backlog incremental. Cada fase constrói sobre a anterior. Marcar `[X]` ao concl
 - [X] Estrutura de dados para fila de prontos (suporte a preempção)
 
 ## ✈️ Fase 4 — Algoritmo Rate-Monotonic (rate)
-- [ ] Prioridade fixa: menor período → maior prioridade
-- [ ] Preempção: nova tarefa de maior prioridade interrompe a atual imediatamente
-- [ ] Desempate: tarefa que aparece primeiro no arquivo de entrada vence
+- [X] Prioridade fixa: menor período → maior prioridade
+- [X] Preempção: nova tarefa de maior prioridade interrompe a atual imediatamente
+- [X] Desempate: tarefa que aparece primeiro no arquivo de entrada vence
 - [ ] Gerar saída `rate_<login>.out` com o formato correto (blocos de execução contíguos)
 - [ ] Seções do arquivo de saída: `EXECUTION BY RATE`, `LOST DEADLINES`, `COMPLETE EXECUTION`, `KILLED`
 - [ ] Conferir saída manualmente com o exemplo `voo.txt` do enunciado
