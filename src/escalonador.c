@@ -28,6 +28,16 @@ Instancia *modoRate(Instancia **instancias, int qtdTarefas){
 }
 
 Instancia *modoEdf(Instancia **instancias, int qtdTarefas){
-    // Placeholder só pra compilar msm
-    return NULL;
+    Instancia *menorDeadline = NULL;
+
+    for (int i = 0; i < qtdTarefas; i++){
+        if (instancias[i] == NULL){
+            continue;
+        }
+        if (menorDeadline == NULL || instancias[i]->deadlineAbsoluta < menorDeadline->deadlineAbsoluta){
+            menorDeadline = instancias[i];
+        }
+    }
+    
+    return menorDeadline;
 }
