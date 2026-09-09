@@ -3,19 +3,19 @@
 Backlog incremental. Cada fase constrói sobre a anterior. Marcar `[X]` ao concluir.
 
 ## 🧱 Fase 1 — Esqueleto e parsing de argumentos
-- [ ] Estrutura do projeto: `src/`, `Makefile`, `.gitignore`, `README`
-- [ ] Parsing de `argc/argv`: `./scheduler [rate|edf] [arquivo.txt]`
-- [ ] Validação: número correto de argumentos (senão erro + saída)
-- [ ] Validação: primeiro argumento é exatamente `rate` ou `edf`
-- [ ] Validação: arquivo de entrada existe e é legível
-- [ ] Mensagens de erro coerentes via stderr, código de saída ≠ 0, sem criar arquivo de saída
+- [X] Estrutura do projeto: `src/`, `Makefile`, `.gitignore`, `README`
+- [X] Parsing de `argc/argv`: `./scheduler [rate|edf] [arquivo.txt]`
+- [X] Validação: número correto de argumentos (senão erro + saída)
+- [X] Validação: primeiro argumento é exatamente `rate` ou `edf`
+- [X] Validação: arquivo de entrada existe e é legível
+- [X] Mensagens de erro coerentes via stderr, código de saída ≠ 0, sem criar arquivo de saída
 
 ## 📂 Fase 2 — Leitura e validação do arquivo de entrada
-- [ ] Ler a primeira linha como `TEMPO_TOTAL` (inteiro positivo)
-- [ ] Ler cada linha seguinte no formato `[NOME] [PERÍODO] [DEADLINE] [BURST]`
-- [ ] Validar: todos os campos presentes, numéricos e positivos
-- [ ] Validar: restrição `C ≤ D ≤ P` para cada tarefa (erro se violada)
-- [ ] Armazenar tarefas em estrutura interna (preservando ordem de chegada no arquivo)
+- [X] Ler a primeira linha como `TEMPO_TOTAL` (inteiro positivo)
+- [X] Ler cada linha seguinte no formato `[NOME] [PERÍODO] [DEADLINE] [BURST]`
+- [X] Validar: todos os campos presentes, numéricos e positivos
+- [X] Validar: restrição `C ≤ D ≤ P` para cada tarefa (erro se violada)
+- [X] Armazenar tarefas em estrutura interna (preservando ordem de chegada no arquivo)
 
 ## 🧮 Fase 3 — Núcleo da simulação (loop de tempo)
 - [ ] Implementar o loop de simulação tick a tick (t = 0 até TEMPO_TOTAL − 1)
