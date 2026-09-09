@@ -65,9 +65,9 @@ Backlog incremental. Cada fase constrói sobre a anterior. Marcar `[X]` ao concl
 - [X] Registrar evidências (saídas, diffs) para o relatório
 
 ## 📝 Fase 9 — README e Makefile
-- [ ] Makefile: `make` sem alvo gera executável `scheduler`; `make clean` remove compilados
-- [ ] README: lista todos os arquivos `.c`, como compilar, como executar, como testar, SO utilizado
-- [ ] Confirmar que `make` funciona em ambiente limpo
+- [X] Makefile: `make` sem alvo gera executável `scheduler`; `make clean` remove compilados
+- [X] README: lista todos os arquivos `.c`, como compilar, como executar, como testar, SO utilizado
+- [X] Confirmar que `make` funciona em ambiente limpo
 
 ## 📦 Fase 10 — Empacotamento e entrega
 - [ ] Commits atômicos no repositório
